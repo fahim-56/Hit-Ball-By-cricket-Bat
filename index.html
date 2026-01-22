@@ -9,10 +9,11 @@
         .field {
             border: 3px solid green;
             height: 700px;
+            width: 1800px;
         }
 
         .bat {
-            transition: transform 2s ease-in;
+            transition: transform 1s ease-in;
         }
 
         .ball {
@@ -22,7 +23,12 @@
             background-color: red;
             margin-left: 670px;
             margin-bottom: -200px;
-            transition: transform 3s ease-out 2s;
+            transition: transform 3s ease-out 1s;
+        }
+
+        .catcher {
+            margin-left: 1500px;
+            transition: transform 2.5s ease-in 1s;
         }
 
         .field:hover .bat {
@@ -31,7 +37,11 @@
         }
 
         .field:hover .ball {
-            transform: translate(800px, -500px);
+            transform: translate(810px, -500px);
+        }
+
+        .field:hover .catcher {
+            transform: translate(-150px, -290px) rotate(45deg);
         }
     </style>
 </head>
@@ -40,10 +50,10 @@
 
     <div class="field">
         <img src="./images/bat.png" alt="" class="bat">
-        <div class="ball">
-
-        </div>
+        <div class="ball"> </div>
+        <img src="./images/catch.png" alt="" class="catcher">
     </div>
+
 
 </body>
 
